@@ -1,0 +1,18 @@
+.input {
+  overflow: visible;
+  display: flex;
+  color: var(--gray-100);
+  background-color: var(--gray-500);
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  width: 32.68rem;
+  height: 3.37rem;
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  align-self: stretch;
+}
+
+.input:focus {
+  outline: 1px solid var(--purple-dark);
+}

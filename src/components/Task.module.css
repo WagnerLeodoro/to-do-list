@@ -1,0 +1,82 @@
+.inputBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: var(--gray-500);
+  width: 46rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.checkboxWrapper {
+  margin-right: 1rem;
+}
+
+.checkbox {
+  cursor: pointer;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox:checked::before {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "\2714";
+  font-size: 1rem;
+  color: var(--gray-100);
+  background: var(--purple-dark);
+  position: absolute;
+}
+
+.checkbox:hover::before {
+  background-color: var(--purple);
+  transition: all 300ms ease-in-out;
+}
+
+.uncheckedText p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 1rem;
+  color: var(--gray-100);
+}
+
+.checkedText p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-right: 1rem;
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.inputBox button {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: 0;
+  color: var(--gray-300);
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 2px;
+}
+
+.inputBox button:hover {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background: var(--gray-600);
+  color: var(--danger);
+  transition: all 100ms ease-in-out;
+}
